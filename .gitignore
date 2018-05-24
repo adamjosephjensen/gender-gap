@@ -104,3 +104,4 @@ venv.bak/
 .mypy_cache/
 glove.6B
 events.*
+emb_matrix.p

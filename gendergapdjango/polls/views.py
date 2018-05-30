@@ -18,7 +18,10 @@ def submit_rule(request):
         dict = request.POST
         rule = dict['rule']
         correct = mlt.model.submit_rule(rule)
-        return JsonResponse({'correct_rule': str(correct)})
+        if correct:
+            return redirect('http://web.stanford.edu/~alicezhy/SexismInTech/247-3-1.html')
+        else:
+            return redirect('http://web.stanford.edu/~alicezhy/SexismInTech/247-3-2.html')
     else:
         return render(request, 'rule_form.html')
 

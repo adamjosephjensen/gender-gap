@@ -308,7 +308,7 @@ data = [
     ["maintain or strengthen beliefs in the face of contrary evidence", 0]
 ]
 
-emb_matrix, word2id, id2word = get_glove('/Users/adamjensen/Documents/gender-gap/gendergapdjango/polls/glove.6B/glove.6B.50d.txt', 50) # make sure these match
+emb_matrix, word2id, id2word = get_glove('./glove.6B/glove.6B.50d.txt', 50) # make sure these match
 model = GameModel(id2word, word2id, emb_matrix, 14)
 desc, labels = zip(*data)
 desc = list(desc)

@@ -105,3 +105,4 @@ venv.bak/
 glove.6B
 events.*
 emb_matrix.p
+.DS_Store

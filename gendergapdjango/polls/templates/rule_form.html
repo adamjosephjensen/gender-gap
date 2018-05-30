@@ -1,0 +1,5 @@
+<form method="POST" action="/polls/submit_rule">
+{% csrf_token %}
+<input type="text" name="rule">
+<button type="submit">Submit Rule</button>
+</form>
